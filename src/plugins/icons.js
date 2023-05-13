@@ -9,6 +9,8 @@ import {
   RiAttachment2,
   FaMicrophone,
   BiChatText,
+  FaSun,
+  BiMoonStarsFill,
 } from "oh-vue-icons/icons";
 
 addIcons(
@@ -20,6 +22,8 @@ addIcons(
   RiAttachment2,
   FaMicrophone,
   BiChatText,
+  FaSun,
+  BiMoonStarsFill,
 );
 
 export default OhVueIcon;

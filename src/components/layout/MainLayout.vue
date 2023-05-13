@@ -1,17 +1,22 @@
 <script setup>
+import { ref } from "vue";
 import Navbar from "@/components/layout/Navbar.vue";
 import LeftSidebar from "@/components/layout/LeftSidebar.vue";
 import MainContent from "@/components/layout/MainContent.vue";
 import RightSidebar from "@/components/layout/RightSidebar.vue";
 import chat from "@/assets/animations/chat.json";
-import { ref } from "vue";
+import Theme from "@/components/layout/Theme.vue";
+import useLeftsidebar from '@/composables/chat/leftsidebar';
 const hasChat = ref(true);
+
+const { contacts } = useLeftsidebar()
+
 </script>
 <template>
   <div class="main_layout">
     <Navbar />
     <div class="main_layout__content">
-      <LeftSidebar />
+      <LeftSidebar :chats="contacts" />
       <template v-if="hasChat">
         <MainContent />
         <RightSidebar />
@@ -23,5 +28,7 @@ const hasChat = ref(true);
         </div>
       </template>
     </div>
+
+    <Theme />
   </div>
 </template>

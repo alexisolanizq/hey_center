@@ -1,0 +1,61 @@
+:root {
+  .main_content {
+    background: $white;
+    color: $text_dark;
+  }
+}
+
+:root.dark-theme {
+  .main_content,
+  .main_content__footer {
+    background: $dark;
+    color: $white;
+  }
+}
+
+:root {
+  .leftsidebar_container {
+    .leftsidebar_content {
+      background: $white;
+    }
+  }
+}
+
+:root.dark-theme {
+  .leftsidebar_container {
+    .leftsidebar_content {
+      background: $dark;
+      .leftsidebar_content__header {
+        color: $white;
+      }
+      .leftsidebar_content__body {
+        color: $white;
+
+        .leftsidebar_content__body__content {
+          .leftsidebar_content__body__content__items {
+            &:hover {
+              background: $muted_dark_mode;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+:root {
+  .rightsidebar_container {
+    .leftsidebar_content {
+      background: $white;
+    }
+  }
+}
+
+:root.dark-theme {
+  .rightsidebar_container {
+    .leftsidebar_content {
+      background: $dark;
+      color: $white;
+    }
+  }
+}

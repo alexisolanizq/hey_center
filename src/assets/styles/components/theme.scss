@@ -1,0 +1,11 @@
+@import "@/assets/styles/abstracts/index.scss";
+.theme{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 999px;
+    width: 50px;
+    height: 50px;
+    background: $primary;
+    z-index: 30;
+}
