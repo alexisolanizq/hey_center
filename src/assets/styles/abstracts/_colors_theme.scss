@@ -1,7 +1,25 @@
 :root {
+  body {
+    background-color: $body;
+  }
+}
+
+:root.dark-theme {
+  body {
+    background-color: $body_dark;
+  }
+}
+
+:root {
   .main_content {
     background: $white;
     color: $text_dark;
+
+    .main_content__footer{
+      .main_content__footer__input{
+        color: $text_dark;
+      }
+    }
   }
 }
 
@@ -10,6 +28,14 @@
   .main_content__footer {
     background: $dark;
     color: $white;
+    .main_content__footer__input{
+      color: $white;
+    }
+    .main_content__footer__buttons {
+      .main_content__footer__buttons__send {
+        color: $white;
+      }
+    }
   }
 }
 

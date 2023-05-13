@@ -5,7 +5,11 @@
   flex: none;
 
   @media (min-width: "850px") {
+    display: none;
+  }
+  @media (min-width: "1200px") {
     width: 380px;
+    display: block;
   }
 
   .leftsidebar_content {

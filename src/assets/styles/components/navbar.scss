@@ -1,25 +1,30 @@
-@import '@/assets/styles/abstracts/index.scss';
-.navbar{
-    padding: 10px;
-    width: 100%;
+@import "@/assets/styles/abstracts/index.scss";
+.navbar {
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: $primary;
+  color: #fff;
+
+  .navbar__title {
+    display: none;
+
+    @media (min-width: "850px") {
+      display: block;
+      font-weight: 600;
+    }
+  }
+
+  .navbar__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar__dropdown {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: $primary;
-    color: #fff;
-
-    .navbar__title{
-        font-weight: 600;
-    }
-
-    .navbar__image{
-        width: 40px;
-        height: 40px;
-    }
-
-    .navbar__dropdown{
-        display: flex;
-        align-items: center;
-        gap: 15px;
-    }
+    gap: 15px;
+  }
 }

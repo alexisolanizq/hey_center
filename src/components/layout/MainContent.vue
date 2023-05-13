@@ -7,30 +7,6 @@
                 <p class="main_content__header__subtitle">+52-333-333-44-55</p>
             </div>
             <div class="main_content__body">
-                <div class="message_user">
-                    Hola
-                </div>
-                <div class="message_center">
-                    Hola
-                </div>
-                <div class="message_center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptate perspiciatis? Magnam ut vel assumenda esse nam eligendi numquam. Tempore?
-                </div>
-                <div class="message_user">
-                    Lorem ipsum dolor sit amet, consectetur.
-                </div>
-                <div class="message_user">
-                    Hola
-                </div>
-                <div class="message_center">
-                    Hola
-                </div>
-                <div class="message_center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, voluptate perspiciatis? Magnam ut vel assumenda esse nam eligendi numquam. Tempore?
-                </div>
-                <div class="message_user">
-                    Lorem ipsum dolor sit amet, consectetur.
-                </div>
             </div>
             <div class="main_content__footer">
                 <input placeholder="Escribe un mensaje" class="main_content__footer__input" type="text">
