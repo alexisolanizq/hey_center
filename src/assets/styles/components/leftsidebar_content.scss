@@ -1,0 +1,91 @@
+@import "@/assets/styles/abstracts/index.scss";
+
+.leftsidebar_container {
+  width: 100%;
+  flex: none;
+  
+  @media (min-width: '850px') {
+      width: 380px;
+  }
+
+  .leftsidebar_content {
+    background: $white;
+    border-radius: 10px;
+
+    .leftsidebar_content__header {
+      margin: 0;
+      height: 70px;
+      width: 100%;
+      padding: 10px 20px;
+      border-bottom: 2px solid $muted;
+      font-size: 17px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .leftsidebar_content__header__title {
+        font-weight: 500;
+      }
+    }
+
+    .leftsidebar_content__body {
+      // padding: 10px 20px;
+
+      .leftsidebar_content__body__title {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        color: $text_muted;
+        padding: 20px;
+        border-bottom: 2px solid $muted;
+      }
+
+      .leftsidebar_content__body__content {
+        display: flex;
+        flex-direction: column;
+        // gap: 20px;
+        .leftsidebar_content__body__content__items {
+          cursor: pointer;
+          border-bottom: 2px solid $muted;
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &:hover {
+            background: $muted;
+          }
+          .leftsidebar_content__body__content__item__image img {
+            border-radius: 999px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+          }
+          .leftsidebar_content__body__content__item__message {
+            p:first-child {
+              font-weight: 600;
+            }
+          }
+          .leftsidebar_content__body__content__item__extra {
+            text-align: right;
+
+            p {
+              color: $text_muted;
+            }
+
+            span {
+              display: inline-block;
+              text-align: center;
+              padding: 2px 10px;
+              border-radius: 999px;
+              color: $white;
+              background: $primary;
+            }
+          }
+        }
+      }
+    }
+  }
+}

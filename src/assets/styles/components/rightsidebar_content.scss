@@ -1,0 +1,61 @@
+@import "@/assets/styles/abstracts/index.scss";
+
+.rightsidebar_container {
+  width: 100%;
+  flex: none;
+
+  @media (min-width: "850px") {
+    width: 380px;
+  }
+
+  .leftsidebar_content {
+    background: $white;
+    border-radius: 10px;
+
+    .leftsidebar_content__header {
+      height: 70px;
+      width: 100%;
+      padding: 10px 20px;
+      border-bottom: 2px solid $muted;
+      font-size: 17px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+      p {
+        &:first-child{
+          font-weight: 500;
+        }
+        &:last-child{
+          color: $text_muted;
+        }
+      }
+    }
+
+    .leftsidebar_content__body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .leftsidebar_content__body__image img{
+        margin: 20px 0 30px 0;
+        border: 5px solid $muted;
+        border-radius: 999px;
+        width: 200px;
+        height: 200px;
+      }
+
+      .leftsidebar_content__body__data{
+        margin-bottom: 15px;
+        .leftsidebar_content__body__data__counter{
+          display: inline-block;
+          background: $primary;
+          border-radius: 999px;
+          padding: 3px 10px;
+          color: $white;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
